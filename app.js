@@ -24,7 +24,7 @@ imagen.addEventListener("mouseover", function (){
     const input = event.target.children;
     //creo link para comunicarse por whatsapp
     let link = document.createElement('a');
-    link.innerHTML = '<a href="https://api.whatsapp.com/send?phone=2612167506&text=hola%20soy">ir a whatsapp</a>'
+    link.innerHTML = '<a href="https://api.whatsapp.com/send?phone=2612167506&text=hola%20soy%20"input"">ir a whatsapp</a>'
     document.body.appendChild(link);
   }
   })
