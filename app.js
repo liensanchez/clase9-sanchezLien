@@ -67,19 +67,21 @@ noBoton.addEventListener('click', function(){
   //creo un nuevo boton
   let nuevoBoton=document.createElement("button");
   //edito el boton
-  nuevoBoton.innerHTML="Quiero mas fotos!";
+  nuevoBoton.innerHTML=" NO quiero mas fotos!";
   //agregando boton 
   document.body.appendChild(nuevoBoton);
   //funcion nuevoBoton
   nuevoBoton.addEventListener('click',function(){
-    //muestro foto de gato1
-    document.getElementById("gatito1").style.display="block";
+    //muestro foto de meme1
+    document.getElementById("meme1").style.display="block";
     //creo un nuevo boton1
     let nuevoBoton1=document.createElement("button");
     //elimino boton
     nuevoBoton.parentNode.removeChild(nuevoBoton);
+    //elimino parrafo
+    parrafo.parentNode.removeChild(parrafo);
     //edito el boton
-    nuevoBoton1.innerHTML="Quiero mas fotos!";
+    nuevoBoton1.innerHTML="Aprendi, quiero otra foto!";
     //agregando boton 
     document.body.appendChild(nuevoBoton1);
       //funcion nuevoBoton1
@@ -90,6 +92,8 @@ noBoton.addEventListener('click', function(){
       let nuevoBoton2=document.createElement("button");
       //elimino boton
       nuevoBoton1.parentNode.removeChild(nuevoBoton1);
+      //elimino meme
+      meme1.parentNode.removeChild(meme1);
       //edito el boton
       nuevoBoton2.innerHTML="Quiero mas fotos!";
       //agregando boton 
